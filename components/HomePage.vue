@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <nav
       class="navbar rounded-box shadow-2xl p-5 border-b-1 border-gray-200 h-20"
       style="border-bottom: 1px solid rgb(235, 231, 231)"
@@ -139,7 +139,9 @@
           >
             Design your book with just a few taps and see it come to life in 3D
           </p>
-          <UButton size="xl" color="blue">Continue your book</UButton>
+          <UButton size="xl" color="blue" ref="target"
+            >Continue your book</UButton
+          >
         </div>
       </div>
     </section>
@@ -365,7 +367,7 @@
       </div>
     </footer>
     <!-- Footer small screen -->
-    <footer class="md:hidden">
+    <footer class="md:hidden mb-10" data-aos="fade" data-aos-duration="2500">
       <div class="bg-white w-full h-auto py-8 px-2">
         <div class="flex flex-col items-center mb-4">
           <h3 class="text-lg font-bold mb-2">Need Help?</h3>
@@ -672,10 +674,20 @@
         </p>
       </div>
     </footer>
+    <div class="fixed bottom-0 p-2 w-full">
+      <UButton block color="blue" size="xl" v-if="!isVisible"
+        >Continue your booking</UButton
+      >
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { useElementVisibility } from "@vueuse/core";
+const target = ref(null);
+
+// Use the useElementVisibility composable
+const isVisible = useElementVisibility(target);
 const faqItems = [
   {
     label: "What sizes do photo come in?",
