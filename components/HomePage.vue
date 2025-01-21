@@ -204,13 +204,15 @@
         </div>
       </div>
     </section>
+    <img src="/baby_mom_album.jpg" alt="" />
+
     <section
       class="py-12 px-4 md:p-32 bg-[#fbf6f6] flex flex-col-reverse md:flex-row items-center justify-center gap-4 md:gap-20"
       data-aos="fade-up"
       data-aos-duration="2500"
     >
-      <div class="w-full md:w-[40%]">
-        <h1 class="text-xl md:text-3xl font-bold mb-2 text-center">
+      <div class="w-full mt-4 md:w-[40%]">
+        <h1 class="text-xl md:text-3xl font-bold mb-4 text-center">
           Frequently asked questions
         </h1>
         <UAccordion
@@ -229,7 +231,7 @@
       </div>
       <UDivider class="md:hidden"></UDivider>
       <div
-        class="flex flex-col gap-10 md:gap-12 items-center justify-center text-center"
+        class="flex flex-col gap-10 md:gap-12 mb-4 mt-4 items-center justify-center text-center"
       >
         <div class="visible md:hidden">
           <h2 class="text-2xl font-semibold text-center mb-2">
@@ -369,14 +371,16 @@
     <!-- Footer small screen -->
     <footer class="md:hidden mb-10" data-aos="fade" data-aos-duration="2500">
       <div class="bg-white w-full h-auto py-8 px-2">
-        <div class="flex flex-col items-center mb-4">
+        <div class="flex flex-col items-center mb-8">
           <h3 class="text-lg font-bold mb-2">Need Help?</h3>
           <p class="">Talk with our real support team,</p>
           <p class="">Every day 7am to midnight EST</p>
-          <UButton color="blue" size="xl" class="mt-2"> Chat With Us </UButton>
+          <UButton color="blue" size="xl" class="mt-4 mb-4">
+            Chat With Us
+          </UButton>
         </div>
         <UDivider />
-        <h1 class="text-center mt-4 text-xl md:text-3xl font-bold mb-4">
+        <h1 class="text-center mt-8 text-xl md:text-3xl font-bold mb-4">
           Follow us
         </h1>
         <div class="flex items-center justify-center gap-4 p-4 flex-wrap mb-4">
@@ -660,21 +664,13 @@
           </svg>
         </div>
         <UDivider></UDivider>
-        <div
-          class="flex flex-col items-center justify-center gap-4 mt-4 mb-4 italic"
-        >
-          <p>Gift Card</p>
-          <p>For Business</p>
-          <p>Careers</p>
-          <p>Your privacy choices</p>
-        </div>
-        <UDivider></UDivider>
+
         <p class="font-thin text-sm text-center mt-4">
           © 2025 Freesnaps. All rights reserved.
         </p>
       </div>
     </footer>
-    <div class="fixed bottom-0 p-2 w-full">
+    <div class="fixed bottom-0 p-2 w-full block md:hidden">
       <UButton block color="blue" size="xl" v-if="!isVisible"
         >Continue your booking</UButton
       >
