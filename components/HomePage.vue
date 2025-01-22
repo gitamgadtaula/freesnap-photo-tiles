@@ -111,9 +111,11 @@
           <video
             class="sc-4d8tt6-2 kxufFT homepage-video"
             poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/photo-books/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--photoBooks--intro-main-desktop3.jpg"
-            autoplay="true"
+            autoplay
             preload="auto"
             loop="true"
+            playsinline
+            defaultMuted
             fetchpriority="high"
             style="object-fit: contain"
           >
@@ -151,6 +153,8 @@
         autoplay
         loop
         muted
+        playsinline
+        defaultMuted
         data-aos="fade-right"
         data-aos-duration="2000"
       >
