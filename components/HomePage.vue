@@ -155,7 +155,7 @@
         muted
         playsinline
         defaultMuted
-        data-aos="fade-right"
+        data-aos="fade"
         data-aos-duration="2000"
       >
         <source src="/intro_video.mov" type="video/mp4" />
