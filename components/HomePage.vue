@@ -326,7 +326,7 @@
     <!-- Faq small screen -->
     <section
       class="visible md:hidden py-12 px-4 bg-[#fbf6f6] flex flex-col items-center justify-center gap-4"
-      data-aos="fade-up"
+      data-aos="fade-right"
       data-aos-duration="2500"
     >
       <div
@@ -423,7 +423,7 @@
     </section>
 
     <section
-      data-aos="fade"
+      data-aos="fade-up"
       class="realtive visible md:hidden py-12 px-4 bg-[#fbf6f6] flex flex-col items-center justify-center gap-4"
     >
       <div class="w-full mt-4 md:w-[40%]">
@@ -502,7 +502,11 @@
       </div>
     </footer>
     <!-- Footer small screen -->
-    <footer class="md:hidden mb-10" data-aos="fade" data-aos-duration="2500">
+    <footer
+      class="md:hidden mb-10"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
       <div class="bg-white w-full h-auto py-8 px-2">
         <div class="flex flex-col items-center mb-8">
           <h3 class="text-lg font-bold mb-2">Need Help?</h3>
