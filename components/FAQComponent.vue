@@ -4,14 +4,14 @@
       v-for="(question, index) in questions"
       :key="index"
       data-aos="fade"
-      class="transition-all duration-200 bg-[#f1eded] cursor-pointer rounded-lg hover:bg-gray-50"
+      class="transition-all duration-100 bg-[#f1eded] cursor-pointer rounded-lg hover:bg-gray-50"
     >
       <button
         @click="toggleAnswer(index)"
         type="button"
         class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
       >
-        <span class="flex text-sm font-normal text-black">{{
+        <span class="flex text-sm text-left font-normal text-black">{{
           question.title
         }}</span>
         <svg
@@ -30,13 +30,8 @@
           ></path>
         </svg>
       </button>
-      <div
-        v-if="question.isOpen"
-        class="px-4 pb-5 sm:px-6 sm:pb-6"
-        data-aos="fade"
-        data-aos-duration="1500"
-      >
-        <p class="text-sm text-gray-700">{{ question.answer }}</p>
+      <div v-if="question.isOpen" class="px-4 pb-5 sm:px-6 sm:pb-6">
+        <p class="text-sm text-gray-700 font-light">{{ question.answer }}</p>
       </div>
     </div>
   </div>
@@ -47,27 +42,45 @@ import { ref } from "vue";
 
 const questions = ref([
   {
-    title: "How can I get started?",
+    title: "What sizes do Photo Books come in?",
     answer:
-      "Getting started is easy! Sign up for an account, and you'll have access to our platform's features. No credit card required for the initial signup.",
+      'Photo Books are available in three convenient sizes: 8" x 8" for $49, 10" x 10" for $79, and 12" x 12" for $99. Regardless of the number of photos you decide to include in your book, the price will remain the same! Each Photo Book requires a minimum of 25 photos and up to a maximum of 150 snapshots of your most treasured memories',
     isOpen: false,
   },
   {
-    title: "What is the pricing structure?",
+    title: "How can I customize my Photo Book?",
     answer:
-      "Our pricing structure is flexible. We offer both free and paid plans. You can choose the one that suits your needs and budget.",
+      "Effortlessly! Our signature layout — featuring one photo per page — guarantees that every cherished memory receives its rightful spotlight. Personalize your Photo Book by handpicking the perfect photo for the front cover and truly make your book your own by customizing (or removing!) the text on the front. With just a click and drag, you can center your photos on each page or rearrange their order to tell your tale exactly as you envision it.",
     isOpen: false,
   },
   {
     title: "What kind of support do you provide?",
     answer:
-      "We offer comprehensive customer support. You can reach out to our support team through various channels, including email, chat, and a knowledge base.",
+      "Effortlessly! Our signature layout — featuring one photo per page — guarantees that every cherished memory receives its rightful spotlight. Personalize your Photo Book by handpicking the perfect photo for the front cover and truly make your book your own by customizing (or removing!) the text on the front. With just a click and drag, you can center your photos on each page or rearrange their order to tell your tale exactly as you envision it.",
     isOpen: false,
   },
   {
-    title: "Can I cancel my subscription anytime?",
+    title: "How long does it take to receive my Photo Book?",
     answer:
-      "Yes, you can cancel your subscription at any time without any hidden fees. We believe in providing a hassle-free experience for our users.",
+      "You can expect your Photo Book to arrive approximately 10 business days after placing your order, but don’t worry – you’ll always see your estimated delivery date on the Checkout page before finalizing your order! Orders are delivered via UPS, and the best part? Shipping is absolutely free!",
+    isOpen: false,
+  },
+  {
+    title: "How long does it take to receive my Photo Book?",
+    answer:
+      "You can expect your Photo Book to arrive approximately 10 business days after placing your order, but don’t worry – you’ll always see your estimated delivery date on the Checkout page before finalizing your order! Orders are delivered via UPS, and the best part? Shipping is absolutely free!",
+    isOpen: false,
+  },
+  {
+    title: "How long does it take to receive my Photo Book?",
+    answer:
+      "You can expect your Photo Book to arrive approximately 10 business days after placing your order, but don’t worry – you’ll always see your estimated delivery date on the Checkout page before finalizing your order! Orders are delivered via UPS, and the best part? Shipping is absolutely free!",
+    isOpen: false,
+  },
+  {
+    title: "How long does it take to receive my Photo Book?",
+    answer:
+      "You can expect your Photo Book to arrive approximately 10 business days after placing your order, but don’t worry – you’ll always see your estimated delivery date on the Checkout page before finalizing your order! Orders are delivered via UPS, and the best part? Shipping is absolutely free!",
     isOpen: false,
   },
 ]);
