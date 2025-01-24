@@ -4,12 +4,12 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "light",
   },
-  modules: ["@nuxt/ui", "@nuxt/fonts", "nuxt-aos"],
+  modules: ["@nuxt/ui", "@nuxt/fonts", "nuxt-aos", "@nuxtjs/color-mode"],
   fonts: {
     families: [
       // do not resolve this font with any provider from `@nuxt/fonts`
       // only resolve this font with the `google` provider
-      { name: "Poppins", provider: "google" },
+      // { name: "Poppins", provider: "google" },
       // specify specific font data - this will bypass any providers
     ],
   },
