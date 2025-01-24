@@ -208,7 +208,11 @@
         </div>
       </div>
     </section>
-    <img src="/baby_mom_album.jpg" alt="" />
+    <img
+      src="/baby_mom_album.jpg"
+      alt=""
+      class="w-full h-80 md:h-[36rem] object-cover"
+    />
     <!-- FAq section large screen -->
 
     <section
@@ -412,7 +416,7 @@
       <img
         src="/album_cover.jpg"
         alt=""
-        class="w-full object-cover"
+        class="w-full h-80 md:h-[36rem] object-cover"
         data-aos="fade-left"
         data-aos-duration="1000"
       />
