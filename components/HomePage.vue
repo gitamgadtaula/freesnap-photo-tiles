@@ -408,10 +408,11 @@
         </div>
       </div>
     </section>
-    <section class="bg-[#fbf6f6]">
+    <section class="bg-[#fbf6f6] overflow-hidden">
       <img
         src="/album_cover.jpg"
         alt=""
+        class="w-full object-cover"
         data-aos="fade-left"
         data-aos-duration="1000"
       />
@@ -847,8 +848,14 @@ const faqItems = [
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "Freesnap";
+  src: url("@/assets/fonts/MixtilesSans-400Regular.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 div {
-  font-family: "Poppins", sans-serif;
+  font-family: "Freesnap", sans-serif;
 }
 .kenburns-top {
   animation: kenburns-top 5s ease-out both;
