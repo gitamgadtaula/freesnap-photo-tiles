@@ -147,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section class="md:relative w-full" data-aos="fade-up">
+    <section class="md:relative w-full">
       <video
         class="shadow object-cover h-full md:h-[40rem] w-full"
         autoplay
