@@ -429,7 +429,7 @@
         <h1
           class="text-center mt-8 text-xl md:text-3xl mb-4 text-[22px] text-[#472c35] font-semibold"
         >
-          Follow us
+          Follow Us
         </h1>
         <div class="flex gap-4 items-center mb-8 justify-center text-[#472c35]">
           <a
