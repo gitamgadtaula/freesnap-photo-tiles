@@ -11,7 +11,7 @@
         type="button"
         class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
       >
-        <span class="flex text-sm text-left font-normal text-black">{{
+        <span class="flex text-base text-left font-normal text-[#2b0514]">{{
           question.title
         }}</span>
         <svg
@@ -31,7 +31,7 @@
         </svg>
       </button>
       <div v-if="question.isOpen" class="px-4 pb-5 sm:px-6 sm:pb-6">
-        <p class="text-sm text-gray-700 font-light">{{ question.answer }}</p>
+        <p class="text-sm text-[#2b0514] font-light">{{ question.answer }}</p>
       </div>
     </div>
   </div>
