@@ -110,7 +110,6 @@
         <div class="w-full md:w-1/2">
           <video
             class="sc-4d8tt6-2 kxufFT homepage-video"
-            poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/photo-books/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--photoBooks--intro-main-desktop3.jpg"
             autoplay
             preload="auto"
             loop="true"
@@ -119,10 +118,7 @@
             fetchpriority="high"
             style="object-fit: contain"
           >
-            <source
-              src="https://d2pkj4iuzqk8im.cloudfront.net/videos/photo-books/c_scale,w_650--q_auto:best--vc_h264:high:auto--v1--assets--photoBooks--intro-main-desktop3.mp4"
-              type="video/mp4; codecs="
-            />
+            <source src="/main_video.mp4" type="video/mp4; codecs=" />
           </video>
           <!-- <video class="shadow" controls="false" autoplay loop muted>
             <source src="/intro_video.mov" type="video/mp4" />
