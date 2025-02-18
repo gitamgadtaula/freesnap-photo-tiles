@@ -101,8 +101,7 @@
       </div>
     </nav>
     <section
-      class="bg-white dark:bg-gray-900"
-      style="height: calc(100vh - 5rem)"
+      class="bg-white dark:bg-gray-900 h-[calc(100vh-5rem)] md:h-auto md:pb-20"
     >
       <div
         class="flex flex-col items-center justify-center md:flex-row max-w-screen-xl px-4 py-8 mx-auto gap-2 md:gap-6 lg:py-16"
@@ -213,8 +212,6 @@
 
     <section
       class="hidden realtive py-12 px-4 md:p-32 bg-[#fbf6f6] md:flex flex-col-reverse md:flex-row items-center justify-center gap-4 md:gap-20"
-      data-aos="fade-up"
-      data-aos-duration="2500"
     >
       <div class="w-full mt-4 md:w-[40%]">
         <h1 class="text-xl md:text-3xl font-bold mb-4 text-center">

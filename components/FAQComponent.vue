@@ -3,7 +3,6 @@
     <div
       v-for="(question, index) in questions"
       :key="index"
-      data-aos="fade"
       class="transition-all duration-100 bg-[#f1eded] cursor-pointer rounded-lg"
     >
       <button
